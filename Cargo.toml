@@ -7,7 +7,7 @@ description = "kubectl completion as a native zshrs plugin (delegates to cobra k
 
 [lib]
 name = "kubectl_completion"
-crate-type = ["cdylib"]
+crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 znative = "0.12"
