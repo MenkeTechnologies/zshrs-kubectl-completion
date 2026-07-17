@@ -24,17 +24,18 @@ resource completion queries the cluster (exactly as a `_kubectl` completion's
 
 ## Install
 
-With **zpm** (zshrs's package manager):
-
 ```sh
-zpm add MenkeTechnologies/zshrs-kubectl-completion
+zpm load MenkeTechnologies/zshrs-kubectl-completion
 ```
 
-`zpm` clones, `cargo build --release`s the cdylib, and `zmodload -R`s it. To
-load at startup, add `zpm load kubectl-completion` to your `.zshrc`. Then
-`kubectl <TAB>` completes.
+Put that one line in your `.zshrc`.
+[zpm](https://github.com/MenkeTechnologies/zshrs/blob/main/docs/ZPM.md),
+zshrs's package manager, installs the plugin on the first shell start — clones
+it, runs `cargo build --release`, and `zmodload -R`s the resulting
+`libkubectl_completion` — then loads it from the store, zero-network, on every
+start after. No separate install step; then `kubectl <TAB>` completes.
 
-## Build manually
+### Manual build
 
 ```sh
 cargo build --release
