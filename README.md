@@ -19,7 +19,7 @@
 
 `kubectl` completion as a native [zshrs](https://github.com/MenkeTechnologies/zshrs) plugin. Instead of a large static, version-pinned `_kubectl` completion function, this delegates to **cobra's built-in completion protocol** — `kubectl __complete <args…> <partial>` — which every modern kubectl exposes. It returns candidates for *the kubectl version you actually have installed*, so there is nothing to keep in sync with kubectl releases.
 
-### [`zshrs`](https://github.com/MenkeTechnologies/zshrs) &middot; [`znative`](https://github.com/MenkeTechnologies/zshrs/blob/main/docs/ZPM.md)
+### [`zshrs`](https://github.com/MenkeTechnologies/zshrs) &middot; [`znative`](https://github.com/MenkeTechnologies/zshrs/blob/main/docs/ZNATIVE.md)
 
 ---
 
@@ -53,7 +53,7 @@ Requires `kubectl` on `PATH`. Subcommand/flag completion works offline; resource
 znative load MenkeTechnologies/zshrs-kubectl-completion
 ```
 
-Put that one line in your `.zshrc`. [znative](https://github.com/MenkeTechnologies/zshrs/blob/main/docs/ZPM.md), zshrs's package manager, installs the plugin on the first shell start — clones it, runs `cargo build --release`, and `zmodload -R`s the resulting `libkubectl_completion` — then loads it from the store, zero-network, on every start after. No separate install step; then `kubectl <TAB>` completes.
+Put that one line in your `.zshrc`. [znative](https://github.com/MenkeTechnologies/zshrs/blob/main/docs/ZNATIVE.md), zshrs's package manager, installs the plugin on the first shell start — clones it, runs `cargo build --release`, and `zmodload -R`s the resulting `libkubectl_completion` — then loads it from the store, zero-network, on every start after. No separate install step; then `kubectl <TAB>` completes.
 
 ### Manual build
 
