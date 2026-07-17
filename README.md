@@ -74,7 +74,7 @@ After loading, `kubectl <TAB>` completes subcommands, flags, and — when a clus
 
 ## [0x03] HOW IT WORKS
 
-A `completions:` generator in the `zshrs-plugin` SDK receives the current command line, runs `kubectl __complete` with those words, and emits the candidate column of cobra's `name\tdescription` output (stopping at the trailing `:<directive>` line). See the zshrs plugin porting guide: [docs/PORTING_ZSH_PLUGIN.md](https://github.com/MenkeTechnologies/zshrs/blob/main/docs/PORTING_ZSH_PLUGIN.md).
+A `completions:` generator in the `znative` SDK receives the current command line, runs `kubectl __complete` with those words, and emits the candidate column of cobra's `name\tdescription` output (stopping at the trailing `:<directive>` line). See the zshrs plugin porting guide: [docs/PORTING_ZSH_PLUGIN.md](https://github.com/MenkeTechnologies/zshrs/blob/main/docs/PORTING_ZSH_PLUGIN.md).
 
 ---
 

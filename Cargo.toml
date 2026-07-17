@@ -10,4 +10,4 @@ name = "kubectl_completion"
 crate-type = ["cdylib"]
 
 [dependencies]
-zshrs-plugin = { git = "https://github.com/MenkeTechnologies/zshrs" }
+znative = "0.12"
