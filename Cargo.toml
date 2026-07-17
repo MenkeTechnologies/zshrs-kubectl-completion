@@ -1,6 +1,6 @@
 [package]
 name = "kubectl_completion"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 publish = false
 description = "kubectl completion as a native zshrs plugin (delegates to cobra kubectl __complete)"
