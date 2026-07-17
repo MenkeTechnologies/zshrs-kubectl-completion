@@ -1,0 +1,13 @@
+[package]
+name = "kubectl_completion"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "kubectl completion as a native zshrs plugin (delegates to cobra kubectl __complete)"
+
+[lib]
+name = "kubectl_completion"
+crate-type = ["cdylib"]
+
+[dependencies]
+zshrs-plugin = { git = "https://github.com/MenkeTechnologies/zshrs" }
