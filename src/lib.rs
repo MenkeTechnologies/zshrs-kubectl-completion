@@ -15,6 +15,7 @@
 //! completion's `kubectl get` calls).
 //!
 //! Load after `compinit`; then `kubectl <TAB>`, `kubectl get po<TAB>`, etc.
+#![allow(clippy::not_unsafe_ptr_arg_deref)]
 
 use std::os::raw::c_int;
 use std::process::Command;

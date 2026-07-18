@@ -4,6 +4,9 @@ version = "0.1.1"
 edition = "2021"
 publish = false
 description = "kubectl completion as a native zshrs plugin (delegates to cobra kubectl __complete)"
+authors = ["MenkeTechnologies"]
+repository = "https://github.com/MenkeTechnologies/zshrs-kubectl-completion"
+homepage = "https://github.com/MenkeTechnologies/zshrs-kubectl-completion"
 
 [lib]
 name = "kubectl_completion"
