@@ -2,10 +2,6 @@ MIT License
 
 Copyright (c) 2026 MenkeTechnologies
 
-An independent native-zshrs implementation of kubectl completion, delegating
-to kubectl's own cobra completion protocol (`kubectl __complete`). Inspired by
-nnao45/zsh-kubectl-completion; shares no code with it.
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
