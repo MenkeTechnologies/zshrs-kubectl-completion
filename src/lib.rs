@@ -85,7 +85,7 @@ fn kubectl_complete(host: &Host, args: &Args) -> c_int {
 
 declare_plugin! {
     name: "kubectl-completion",
-    version: "0.1.0",
+    version: "0.1.1",
     completions: {
         "kubectl" => kubectl_complete,
     },
